@@ -1,74 +1,14 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import Layout from '../layouts/BlogPost.astro';
 ---
 
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>What You Need to Know About LDL Cholesterol | BloodTest.in</title>
-  <meta name="description" content="Learn what LDL cholesterol means, healthy LDL levels, causes of high LDL, testing, and ways to manage cholesterol.">
-  <link rel="canonical" href="https://bloodtest.in/">
-  <style>
-    :root{--bg:#f8fafc;--text:#172033;--muted:#667085;--brand:#0f766e;--card:#fff;--border:#e5e7eb}
-    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Arial,sans-serif;line-height:1.7}
-    header{background:#fff;border-bottom:1px solid var(--border)}.nav{max-width:1080px;margin:auto;padding:20px;display:flex;justify-content:space-between;align-items:center}
-    .logo{font-size:22px;font-weight:800;color:var(--brand);text-decoration:none}.nav a{margin-left:22px;color:#344054;text-decoration:none}
-    main{max-width:820px;margin:55px auto;padding:0 22px}.eyebrow{color:var(--brand);font-weight:700;text-transform:uppercase;font-size:13px;letter-spacing:.08em}
-    h1{font-size:46px;line-height:1.15;margin:10px 0 18px}h2{font-size:28px;margin-top:42px}h3{font-size:21px;margin-top:28px}
-    .intro{font-size:19px;color:#475467}.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:24px;margin:28px 0}
-    table{width:100%;border-collapse:collapse;background:#fff}th,td{padding:12px;border:1px solid var(--border);text-align:left}th{background:#f2f4f7}
-    .cta{background:#ecfdf3;border:1px solid #a7f3d0;border-radius:14px;padding:28px;margin-top:45px}.cta a{display:inline-block;background:var(--brand);color:#fff;padding:11px 18px;border-radius:8px;text-decoration:none;font-weight:700}
-    footer{max-width:1080px;margin:50px auto;padding:25px 22px;color:var(--muted);border-top:1px solid var(--border);font-size:14px}
-    @media(max-width:650px){h1{font-size:34px}.nav{align-items:flex-start}.nav a{margin-left:10px}}
-  </style>
-</head>
-<body>
-<header>
-  <nav class="nav" aria-label="Main navigation">
-    <a class="logo" href="https://bloodtest.in/">BloodTest.in</a>
-    <div>
-      <a href="https://bloodtest.in/">Home</a>
-      <a href="https://bloodtest.in/blog">Blog</a>
-      <a href="https://bloodtest.in/contact">Contact</a>
-    </div>
-  </nav>
-</header>
-
-<main>
-  <div class="eyebrow">BloodTest.in Health Guide</div>
-  <h1>What You Need to Know About LDL Cholesterol</h1>
-  <p class="intro">LDL cholesterol is one of the most important measurements in a lipid profile. Learn what LDL means, how high LDL can affect cardiovascular health, how it is tested, and what you can do to manage your levels.</p>
-
-  <div class="card">
-    <strong>Quick answer:</strong> LDL stands for low-density lipoprotein. It carries cholesterol through the bloodstream, but excessive LDL can contribute to plaque buildup in arteries and increase cardiovascular risk.
-  </div>
-
-  <h2>What Is LDL Cholesterol?</h2>
-  <p>LDL, or low-density lipoprotein, transports cholesterol through the bloodstream. Cholesterol is necessary for several normal body functions, but too much LDL can contribute to atherosclerosis, in which plaque builds up inside the arteries.</p>
-
-  <h2>Why Is High LDL a Concern?</h2>
-  <p>High LDL usually does not cause noticeable symptoms. Over time, however, excess LDL can contribute to plaque formation and may increase the risk of coronary artery disease, heart attack and stroke.</p>
-
-  <h2>What Is a Healthy LDL Level?</h2>
-  <p>For many adults, an LDL level below 100 mg/dL is generally considered desirable. However, the appropriate LDL goal depends on a person's overall cardiovascular risk and medical history.</p>
-
-  <table>
-    <thead><tr><th>LDL level</th><th>General interpretation</th></tr></thead>
-    <tbody>
-      <tr><td>Less than 100 mg/dL</td><td>Generally desirable</td></tr>
-      <tr><td>100–129 mg/dL</td><td>Near optimal for some people</td></tr>
-      <tr><td>130–159 mg/dL</td><td>Borderline high</td></tr>
-      <tr><td>160–189 mg/dL</td><td>High</td></tr>
-      <tr><td>190 mg/dL or higher</td><td>Very high</td></tr>
-    </tbody>
-  </table>
-
-  <h2>What Causes High LDL Cholesterol?</h2>
+<Layout
+	title="About Me"
+	description="Lorem ipsum dolor sit amet"
+	pubDate={new Date('August 08 2021')}
+	heroImage="/blog-placeholder-about.jpg"
+>
+ <h2>What Causes High LDL Cholesterol?</h2>
   <p>High LDL can be influenced by diet, excess weight, physical inactivity, genetics and certain medical conditions or medicines. Familial hypercholesterolemia is an inherited condition that can cause particularly high cholesterol.</p>
 
   <h2>How Is LDL Cholesterol Tested?</h2>
@@ -96,11 +36,5 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
   <div class="card">
     <strong>Medical disclaimer:</strong> This article is for general educational purposes and is not a substitute for professional medical advice, diagnosis or treatment. Cholesterol targets and treatment decisions should be individualized by a qualified healthcare professional.
-  </div>
-</main>
-
-<footer>
-  © 2026 BloodTest.in. All rights reserved.
-</footer>
-</body>
-</html>
+  </div> 
+</Layout>
